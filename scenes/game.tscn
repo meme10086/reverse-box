@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_game"]
+[ext_resource type="Script" path="res://scripts/fx.gd" id="2_fx"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_game")
+level_index = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.4, 1.4)
+
+[node name="FX" type="Node2D" parent="."]
+script = ExtResource("2_fx")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="LevelLabel" type="Label" parent="HUD"]
+offset_left = 16.0
+offset_top = 12.0
+offset_right = 500.0
+offset_bottom = 44.0
+theme_override_font_sizes/font_size = 20
+
+[node name="StepsLabel" type="Label" parent="HUD"]
+offset_left = 16.0
+offset_top = 48.0
+offset_right = 500.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 20
+
+[node name="RewindLabel" type="Label" parent="HUD"]
+offset_left = 16.0
+offset_top = 84.0
+offset_right = 500.0
+offset_bottom = 116.0
+theme_override_font_sizes/font_size = 20
