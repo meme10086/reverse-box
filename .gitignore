@@ -1,0 +1,32 @@
+# ---- Godot 4.x ----
+# 编辑器导入缓存（体积大、可重新生成）
+.godot/
+
+# 导出产物
+build/*.exe
+build/*.apk
+build/*.idsig
+build/*.pck
+build/*.zip
+build/_old_*
+
+# 含 Android 签名密码的导出配置（改用 export_presets.cfg.example）
+export_presets.cfg
+
+# ---- 运行日志 ----
+ghost.log
+*.log
+
+# ---- Python 关卡校验工具 ----
+tests/python/__pycache__/
+__pycache__/
+*.pyc
+
+# ---- 已弃用的美术素材（体积大且游戏内不引用）----
+assets/art/_handpainted/
+assets/art/candidates/
+
+# ---- 系统文件 ----
+Thumbs.db
+.DS_Store
+desktop.ini
